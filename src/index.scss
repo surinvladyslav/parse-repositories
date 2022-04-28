@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a,button {
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.App{
+  &.dark {
+    color: #8b949e !important;
+    background-color: #0d1117 !important;
+    & header {
+      background-color: #161b22;
+      border-bottom: 1px solid #30363d;
+      & .list-length {
+        color: #c9d1d9;
+        & span {
+          color: #c9d1d9;
+          background-color: #6e768166;
+          border: 1px solid #8b949e ;
+        }
+      }
+    }
+
+    & .btn-scroll {
+      background-color: #212121;
+      border: 1px solid #30363d;  
+      &:hover {
+        background-color: #30363d;
+        border-color: #8b949e;
+      }  
+    }
+
+    & .spinner-border {
+      color: #0d1117 !important;
+    }
+
+    & .offcanvas {
+      background-color: #0d1117 !important;
+      & .theme {
+        & .theme-title {
+          border-bottom: 1px solid #24292f;
+          color: #c9d1d9;
+        }
+        
+        & .theme-subtitle {
+          color: #c9d1d9;
+        }
+
+        & .theme-select {
+          color: #c9d1d9;
+          background-color: #161b22;
+          > option {
+            color: #c9d1d9;
+          }
+        }
+      }
+      & .react-tabs__tab {
+        color: #c9d1d9;
+        & svg {
+          fill: #8b949e;
+        }
+
+        &::before {
+          background: #58a6ff;
+        }
+      }
+
+      & .react-tabs__tab--selected {
+        background-color: #1a1f25 !important;
+
+      }
+    }
+    
+    & .card {
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      color: white;
+      & .card-header {
+        background: none;
+        & .url-separator {
+          color: #57606a;
+        }
+
+        & .rep {
+          fill: #8b949e;
+        }
+
+        & .url {
+          color: #58a6ff;
+        }
+
+        & .card-label {
+          color: #8b949e;
+          border-color: #30363d;
+        } 
+      }
+
+      & .card-body {
+        & .card-subtitle,
+          .card-title {
+          color: #c9d1d9;
+        }
+        & .card-badge {
+          color: #8b949e;
+          & svg {
+            fill: #8b949e;
+          }
+          & .text-bold {
+            color: #8b949e;
+          }
+        }
+        & .card-badge.homepage {
+          color: #58a6ff;
+          & svg {
+            fill: #c9d1d9 !important;
+          }
+          & .link {
+            fill: #8b949e;
+          }
+        }
+      }
+
+      & .card-view {
+        color: #c9d1d9;
+        border: 1px solid #f0f6fc1a;
+        background-color: #21262d;
+        & svg {
+          fill: #c9d1d9;
+        }
+        &:hover {
+          background-color: #30363d;
+          border-color: #8b949e;
+        }
+      }
+    }
+
+    & .afterjs {
+      color: #8b949e;
+    }
+
+  }
+
+  &.light {
+    background-color: #f6f8fa !important;
+    color: #0d1117 !important;
+    & header {
+      background-color: #ffffff;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+      & .list-length {
+        color: #24292f;
+        & span {
+          border: 1px solid #1b1f2426;
+          color: #24292f;
+          background-color: #afb8c133;
+        }
+      }
+    }
+
+    & .btn-scroll {
+      background-color: #f6f8fa;
+      border: 1px solid #1b1f2426;  
+      & svg {
+        fill: #8b949e;
+      } 
+      &:hover {
+        background-color: #f3f4f6;
+        border-color: #8b949e;
+
+      }
+    }
+    
+    & .spinner-border {
+      color: #57606a !important;
+    }
+
+    & .offcanvas {
+      background-color: #f6f8fa !important;
+      & .save-rep {
+        color: #24292f;
+      }
+
+      & .theme {
+        & .theme-title {
+          border-bottom: 1px solid #d8dee4;
+          color: #24292f;
+        }
+        
+        & .theme-subtitle {
+          color: #24292f;
+        }
+
+        & .theme-select {
+          color: #24292f;
+        }
+      }
+    }
+
+    & .card {
+      background-color: white;
+      color: #0d1117;
+      border: 1px solid rgba(0,0,0,.125);
+      & .card-header {
+        background: none;
+        & .url-separator {
+          color: #57606a;
+        }
+
+        & .rep {
+          fill: #57606a;
+        }
+
+        & .url {
+          color: #0969da;
+        }
+
+        & .card-label {
+          color: #57606a;
+          border-color: #d0d7de;
+        } 
+      }
+
+      & .card-body {
+        & .card-subtitle {
+          color: #24292f;
+        }
+        & .card-badge {
+          color: #57606a;
+          & svg {
+            fill: #57606a;
+          }
+          & .text-bold {
+            color: #57606a;
+          }
+        }
+        & .card-badge.homepage {
+          color: #2069da;
+          & .link {
+            fill: #24292f;
+          }
+        }
+      }
+
+      & .card-view {
+        color: #24292f;
+        border: 1px solid #1b1f2426;
+        background-color: #f6f8fa;
+        & svg {
+          fill: #24292f;
+        }
+        &:hover {
+          background-color: #f3f4f6;
+          border-color: #8b949e;
+        }
+      }
+    }
+
+    & .afterjs {
+      color: #57606a;
+    }
+  }
+}
+
+.afterjs {
+  font-size: 12px;
+  position: relative;
+  margin: 0;
+  text-align: center;
+  padding-bottom: .5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  &.loader {
+    bottom: 0;
+  }
+}

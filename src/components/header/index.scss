@@ -1,0 +1,215 @@
+header {
+    margin-bottom: .5rem;
+    min-height: 55px !important;
+    align-items: center;
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-toggler {
+    & svg {
+        fill: #57606a;
+        transition: .5s;
+        &:hover {
+            fill: #acacac;
+        }
+    }
+}
+
+.navbar {
+    padding: 0;
+}
+
+.fixed-top {
+    position: unset;
+}
+
+.react-tabs {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.offcanvas {
+    transition: .7s !important;
+    border: none;
+    overflow-y: scroll;
+}
+
+.offcanvas-header {
+    padding: 1rem 0;
+}
+
+.offcanvas-header-inner {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    & button {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        > img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+.container-fluid {
+    justify-content: flex-end !important;
+    padding: 0;
+}
+
+.offcanvas-body {
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.react-tabs__tab-panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    @media (max-width: 768px) {
+        width: 100% !important;
+    }
+}
+
+.react-tabs {
+    justify-content: flex-start;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.react-tabs__tab-list {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    border: none;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+.react-tabs__tab {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #24292f;
+    padding: 5px 10px;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+    margin: 1px 0;
+    border: none;
+    margin-left: 10px;
+    & svg {
+        margin-right: 5px;
+        fill: #57606a;
+    }
+    &:hover {
+        background-color: #d0d7de3d;
+        border-radius: 6px;
+    }
+} 
+
+.react-tabs__tab--selected {
+    background-color: #d0d7de3d;
+    font-weight: 600;
+    border-radius: 6px;
+    position: relative;
+    &::before {
+        position: absolute;
+        top: calc(50% - 12px);
+        left: -8px;
+        width: 4px;
+        height: 24px;
+        content: "";
+        background: #0969da;
+        border-radius: 6px;
+    }
+}
+
+.save-rep {
+    color: #c9d1d9;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #c9d1d9;
+    font-size: 14px;
+    position: absolute;
+    font-weight: 700;
+}
+
+.theme {
+    display: flex;
+    flex-direction: column;
+    & .theme-title {
+        border-bottom: 1px solid #d8dee4;
+        font-size: 24px;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+    
+    & .theme-subtitle {
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 1rem;
+    }
+
+    & .theme-select {
+        display: inline-block;
+        max-width: 100%;
+        height: 32px;
+        background-color: transparent;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0iIzU4NjA2OSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNC40MjcgOS40MjdsMy4zOTYgMy4zOTZhLjI1MS4yNTEgMCAwMC4zNTQgMGwzLjM5Ni0zLjM5NkEuMjUuMjUgMCAwMDExLjM5NiA5SDQuNjA0YS4yNS4yNSAwIDAwLS4xNzcuNDI3ek00LjQyMyA2LjQ3TDcuODIgMy4wNzJhLjI1LjI1IDAgMDEuMzU0IDBMMTEuNTcgNi40N2EuMjUuMjUgMCAwMS0uMTc3LjQyN0g0LjZhLjI1LjI1IDAgMDEtLjE3Ny0uNDI3eiIgLz48L3N2Zz4=);
+        background-repeat: no-repeat;
+        background-position: right 4px center;
+        background-size: 16px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        cursor: pointer;
+        padding: 5px 12px;
+        font-size: 14px;
+        line-height: 20px;
+        border-radius: 6px;
+        color: #24292f;
+        outline: none;
+    }
+}
+
+.list-length {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border-radius: 6px;
+    margin-right: .5rem;
+    padding: 5px 16px;
+    line-height: 20px;
+    & p {
+      font-weight: 600;
+      font-size: 14px;
+      margin: 0;
+    }
+    & span {
+      color: #c9d1d9;
+      background-color: #6e768166;
+      margin-left: 4px;
+      display: inline-block;
+      font-weight: bold !important;
+      min-width: 20px;
+      padding: 0 6px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+      text-align: center;
+      border: 1px solid #00000000;
+      border-radius: 2em;
+    }
+}
