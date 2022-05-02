@@ -28,6 +28,8 @@
             font-weight: bold;
             font-size: 18px;
             margin: 0;
+            display: contents;
+            align-items: center;
         }
 
         & .url-separator {
@@ -39,6 +41,11 @@
         & .url {
             color: #58a6ff;
             line-height: 18px;
+            overflow: hidden;
+            display: inline-block;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 50%;
             &.owner {
                 font-weight: 500;
                 margin-left: .2rem; 
