@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/parse-repositories/static/css/main.0906e5ce.css",
+    "main.js": "/parse-repositories/static/js/main.b5a6bf67.js",
+    "index.html": "/parse-repositories/index.html",
+    "main.0906e5ce.css.map": "/parse-repositories/static/css/main.0906e5ce.css.map",
+    "main.b5a6bf67.js.map": "/parse-repositories/static/js/main.b5a6bf67.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0906e5ce.css",
+    "static/js/main.b5a6bf67.js"
+  ]
+}
